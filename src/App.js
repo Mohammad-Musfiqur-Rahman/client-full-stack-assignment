@@ -18,7 +18,6 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-        <h2>Hello React is working</h2>
       </div>
     </BrowserRouter>
 
