@@ -21,14 +21,14 @@ const Login = () => {
     const [formValue, setFormValue] = useState(initialState);
     const { email, password } = formValue;
     const handleSubmit = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         // if (email && password) {
         //   dispatch(login({ formValue, navigate, toast }));
         // }
     };
     const onInputChange = (e) => {
-        // let { name, value } = e.target;
-        // setFormValue({ ...formValue, [name]: value });
+        let { name, value } = e.target;
+        setFormValue({ ...formValue, [name]: value });
     };
 
     return (
